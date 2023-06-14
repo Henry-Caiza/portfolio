@@ -6,19 +6,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-import gym from '../../public/images/projects/gym.png'
-import poke from '../../public/images/projects/poke.png'
-import machine from '../../public/images/projects/machine.png'
-import movsos from '../../public/images/projects/movsos2.png'
-import weather from '../../public/images/projects/weather.png'
-import shopy from '../../public/images/projects/shopy.png'
-import catapi from '../../public/images/projects/catapi.png'
-import music from '../../public/images/projects/music.png'
-import game from '../../public/images/projects/juego.png'
-import travel from '../../public/images/projects/travel.png'
-import linktree from '../../public/images/projects/links.png'
+import gymfit from '../../public/images/projects/gymfit.png'
+import pokeredux from '../../public/images/projects/pokeredux.png'
+import machinetodo from '../../public/images/projects/machinetodo.png'
+import movsosapp from '../../public/images/projects/movsos.png'
+import weatherapp from '../../public/images/projects/weatherapp.png'
+import shopyfy from '../../public/images/projects/shopyfy.png'
+import catapirest from '../../public/images/projects/catapirest.png'
+import musiclnading from '../../public/images/projects//musiclanding.png'
+import gameapp from '../../public/images/projects/game.png'
+import travelapp from '../../public/images/projects/travelapp.png'
+import linktreeapp from '../../public/images/projects/linktree.png'
 
-import stadistic from '../../public/images/projects/stadistic.png'
+import stadisticapp from '../../public/images/projects/stadisticbasic.png'
 
 
 import { motion } from 'framer-motion'
@@ -109,7 +109,7 @@ function projects() {
                             <FeaturedProject
 
                                 title='Shopify'
-                                img={shopy}
+                                img={shopyfy}
                                 summary=
                                 'An ecommerce oriented website uses React, Tailwind CSS, React Router, Local Storage, REST API and Vite. Consume and display information about an ecommerce api, such as products from different categories.'
                                 link='https://starlit-rugelach-6411a8.netlify.app/'
@@ -121,7 +121,7 @@ function projects() {
                             <FeaturedProject
 
                                 title='The FIT CLUB'
-                                img={gym}
+                                img={gymfit}
                                 summary=
                                 'A gym oriented website using React, Tailwind CSS and React Router. It displays information about the business such as plans, programs, features, and customer testimonials.'
                                 link='https://voluble-cupcake-250539.netlify.app/'
@@ -132,7 +132,7 @@ function projects() {
                         <div className='col-span-6 sm:col-span-12'>
                             <Project
                                 title='MovSos - Movies and Series TV'
-                                img={movsos}
+                                img={movsosapp}
                                 link='https://henry-caiza.github.io/movsos/'
                                 github='https://github.com/Henry-Caiza/movsos'
                                 type='Web Site'
@@ -141,7 +141,7 @@ function projects() {
                         <div className='col-span-6 sm:col-span-12'>
                             <Project
                                 title='Pelosos Random'
-                                img={catapi}
+                                img={catapirest}
                                 link='https://henry-caiza.github.io/CatApi/public/index.html'
                                 github='https://github.com/Henry-Caiza/CatApi'
                                 type='Web Site'
@@ -151,7 +151,7 @@ function projects() {
                             <FeaturedProject
 
                                 title='Pokedux'
-                                img={poke}
+                                img={pokeredux}
                                 summary=
                                 'An app that shows the pokemons of the first generation that uses API REST, React, Tailwind CSS and Redux. It shows information about the first generation pokemon where it can help you search for a specific pokemon.'
                                 link='https://effulgent-parfait-c319bc.netlify.app/'
@@ -162,7 +162,7 @@ function projects() {
                         <div className='col-span-6 sm:col-span-12'>
                             <Project
                                 title='Travel'
-                                img={travel}
+                                img={travelapp}
                                 link='https://henry-caiza.github.io/travel/public/index.html'
                                 github='https://github.com/Henry-Caiza/travel'
                                 type='Featured Project'
@@ -171,7 +171,7 @@ function projects() {
                         <div className='col-span-6 sm:col-span-12'>
                             <Project
                                 title='Weather App'
-                                img={weather}
+                                img={weatherapp}
                                 link='https://henry-caiza.github.io/avostore/public/wather.html'
                                 github='https://github.com/Henry-Caiza/avostore'
                                 type='Web Site'
@@ -181,7 +181,7 @@ function projects() {
                             <FeaturedProject
 
                                 title='TodoMachine'
-                                img={machine}
+                                img={machinetodo}
                                 summary=
                                 'An application that helps you create tasks that you can do during the day using React, React Router, Local Sorage. Display information about completed and uncompleted tasks, create new tasks, delete tasks, and filter tasks.'
                                 link='https://henry-caiza.github.io/todo/'
@@ -192,7 +192,7 @@ function projects() {
                         <div className='col-span-6 sm:col-span-12'>
                             <Project
                                 title='Landing Music'
-                                img={music}
+                                img={musiclnading}
                                 link='https://henry-caiza.github.io/landingAsy/'
                                 github='https://github.com/Henry-Caiza/landingAsy'
                                 type='Web Site'
@@ -201,7 +201,7 @@ function projects() {
                         <div className='col-span-6 sm:col-span-12'>
                             <Project
                                 title='Game with JS'
-                                img={game}
+                                img={gameapp}
                                 link='https://henry-caiza.github.io/juegoJS/'
                                 github='https://github.com/Henry-Caiza/juegoJS'
                                 type='Web App'
@@ -210,7 +210,7 @@ function projects() {
                         <div className='col-span-6 sm:col-span-12'>
                             <Project
                                 title='LinkTree clone'
-                                img={linktree}
+                                img={linktreeapp}
                                 link='https://henry-caiza.github.io/links/index.html'
                                 github='https://github.com/Henry-Caiza/links/tree/gh-pages'
                                 type='Web Site'
@@ -219,7 +219,7 @@ function projects() {
                         <div className='col-span-6 sm:col-span-12'>
                             <Project
                                 title='Statistics Calculator'
-                                img={stadistic}
+                                img={stadisticapp}
                                 link='https://henry-caiza.github.io/estadisticaBasicaJs/'
                                 github='https://github.com/Henry-Caiza/estadisticaBasicaJs'
                                 type='Web App'
