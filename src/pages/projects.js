@@ -112,7 +112,7 @@ function projects() {
                                 img={shopyfy}
                                 summary=
                                 'An ecommerce oriented website uses React, Tailwind CSS, React Router, Local Storage, REST API and Vite. Consume and display information about an ecommerce api, such as products from different categories.'
-                                link='https://starlit-rugelach-6411a8.netlify.app/'
+                                link='https://shopy-hc.netlify.app/'
                                 github='https://github.com/Henry-Caiza/shopify'
                                 type='Web Site'
                             />
@@ -124,7 +124,7 @@ function projects() {
                                 img={gymfit}
                                 summary=
                                 'A gym oriented website using React, Tailwind CSS and React Router. It displays information about the business such as plans, programs, features, and customer testimonials.'
-                                link='https://voluble-cupcake-250539.netlify.app/'
+                                link='https://henry-caiza-gym.netlify.app/'
                                 github='https://github.com/Henry-Caiza/gym'
                                 type='Web Site'
                             />
@@ -154,7 +154,7 @@ function projects() {
                                 img={pokeredux}
                                 summary=
                                 'An app that shows the pokemons of the first generation that uses API REST, React, Tailwind CSS and Redux. It shows information about the first generation pokemon where it can help you search for a specific pokemon.'
-                                link='https://effulgent-parfait-c319bc.netlify.app/'
+                                link='https://pokeredux-hc.netlify.app/'
                                 github='https://github.com/Henry-Caiza/pokeRedux'
                                 type='Web Site'
                             />
