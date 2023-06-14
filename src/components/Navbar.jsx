@@ -55,7 +55,7 @@ function Navbar() {
 
     return (
         <header
-            className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8 border-b  dark:border-b-greenLight/40 border-b-dark/40"
+            className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8 border-b lg:pb-16 dark:border-b-greenLight/40 border-b-dark/40"
         >
 
             <button className="fixed right-6 top-10 bottom-auto left-auto flex-col justify-center items-center hidden lg:flex" onClick={handleClick}>

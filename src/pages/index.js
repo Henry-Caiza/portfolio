@@ -24,7 +24,7 @@ export default function Home() {
       </Head>
       <TransitionEffect />
       <main className='flex items-center text-dark w-full min-h-screen dark:text-light/80 2xl:'>
-        <Layout className='pt-0 md:pt-16 sm:pt-8'>
+        <Layout className='pt-0 md:pt-16 sm:pt-8 lg:self-start'>
           <div className='flex items-center justify-between w-full lg:flex-col'>
 
             <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
@@ -47,8 +47,8 @@ export default function Home() {
                 >Contact</Link>
               </div>
             </div>
-            <div className='w-1/2 px-16 pt-10 md:w-full sm:px-4 sm:pt-0 sm:mt-8'>
-              <Image src={profilePic} alt='Photo Henry Caiza' className='w-full h-auto lg:hidden md:inline-block md:w-full'
+            <div className='w-1/2 px-16 pt-10 lg:w-full sm:px-4 sm:pt-0 sm:mt-8'>
+              <Image src={profilePic} alt='Photo Henry Caiza' className='w-full h-auto  md:inline-block md:w-full'
                 priority
                 sizes='(max-width: 768px) 100vw, 
               (max-width: 1200px) 50vw, 

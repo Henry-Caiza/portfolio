@@ -3,33 +3,10 @@ import { Layout } from '@/components/Layout'
 import Head from 'next/head'
 import Image from 'next/image'
 
-import profilePicLight from '../../public/images/profile/profile4.jpg'
+import profilePicLight from '../../public/images/profile/profile.png'
 
 import NumberCounter from 'number-counter'
 import { TransitionEffect } from '@/components/TransitionEffect'
-
-
-// const AnimatedNumber = ({ value }) => {
-//     const ref = useRef(null)
-
-//     const motionValue = useMotionValue(0)
-//     const springValue = useSpring(motionValue, { duration: 3000 })
-//     const isInView = useInView(ref)
-
-//     useEffect(() => {
-//         if (isInView) {
-//             motionValue.set(value)
-//         }
-//     }, [isInView, value, motionValue])
-
-//     useEffect(() => {
-//         springValue.on('change', (latest) => {
-//             console.log(latest);
-//         })
-//     }, [springValue, value])
-//     return <span>{ref}</span>
-// }
-
 
 
 
