@@ -17,6 +17,7 @@ import music from '../../public/images/projects/music.png'
 import game from '../../public/images/projects/juego.png'
 import travel from '../../public/images/projects/travel.png'
 import linktree from '../../public/images/projects/links.png'
+
 import stadistic from '../../public/images/projects/stadistic.png'
 
 
