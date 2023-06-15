@@ -32,7 +32,7 @@ export default function Home() {
               <AnimatedText text="Hey There,"
                 className='!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl' />
               <AnimatedText text="I'm Henry."
-                className='!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl' />
+                className='!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl dark:!text-greenLight !text-primary' />
               <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
                 As a software developer and engineer, my goal is to turn ideas into innovative web applications.
                 Enter and explore my projects where you can see my experience in software development, especially web.
