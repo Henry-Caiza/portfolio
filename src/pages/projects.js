@@ -19,6 +19,7 @@ import travelapp from '../../public/images/projects/travelapp.png'
 import linktreeapp from '../../public/images/projects/linktree.png'
 
 import stadisticapp from '../../public/images/projects/stadisticbasic.png'
+import stupifyapp from '../../public/images/projects/stupify.png'
 
 
 import { motion } from 'framer-motion'
@@ -108,6 +109,18 @@ function projects() {
                         <div className='col-span-12'>
                             <FeaturedProject
 
+                                title='Stupify'
+                                img={stupifyapp}
+                                summary=
+                                'An clone of Spotify oriented website uses Nextjs, React, Tailwind CSS, React Router, PostgreSQL, Supabase and Strapi for subscriptions. It displays information about the songs where you can search for your favorite song and like it and with a subscription you can upload your songs.'
+                                link='https://spotify-clone-henrycv.vercel.app/'
+                                github='https://github.com/Henry-Caiza/spotify-clone'
+                                type='Web Site'
+                            />
+                        </div>
+                        <div className='col-span-12'>
+                            <FeaturedProject
+
                                 title='Shopify'
                                 img={shopyfy}
                                 summary=
@@ -123,7 +136,7 @@ function projects() {
                                 title='The FIT CLUB'
                                 img={gymfit}
                                 summary=
-                                'A gym oriented website using React, Tailwind CSS and React Router. It displays information about the business such as plans, programs, features, and customer testimonials.'
+                                'A gym oriented website using NextJS, React, Tailwind CSS and React Router. It displays information about the business such as plans, programs, features, and customer testimonials.'
                                 link='https://henry-caiza-gym.netlify.app/'
                                 github='https://github.com/Henry-Caiza/gym'
                                 type='Web Site'
