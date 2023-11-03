@@ -76,7 +76,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github, tools }) => 
                         {
                             tools.map((tool) => {
                                 return (
-                                    <Image src={tool} alt={title} className='w-8 h-8 sm:w-4 sm:h-4'
+                                    <Image src={tool} alt={title} className='w-8 h-8 sm:w-4 sm:h-4' key={title}
 
                                     />
                                 )
@@ -121,7 +121,7 @@ const Project = ({ type, title, img, link, github, tools }) => {
                         {
                             tools.map((tool) => {
                                 return (
-                                    <Image src={tool} alt={title} className='w-6 h-6 sm:w-4 sm:h-4'
+                                    <Image src={tool} alt={title} className='w-6 h-6 sm:w-4 sm:h-4' key={title}
 
                                     />
                                 )
