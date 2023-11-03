@@ -63,20 +63,20 @@ const FeaturedProject = ({ type, title, summary, img, link, github, tools }) => 
                     <h2 className='my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm'>{title}</h2>
                 </Link>
                 <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
-                <div className='mt-2 w-full flex justify-between'>
-                    <div className='flex'>
+                <div className='mt-2 w-full flex justify-between items-center gap-0 sm:gap-2'>
+                    <div className='flex items-center sm:w-[75%]'>
                         <Link href={github} target='_blank' className='w-10'>
                             <GithubIcon />
                         </Link>
-                        <Link href={link} target='_blank' className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-greenLight dark:text-dark sm:px-4 sm:text-base'>
+                        <Link href={link} target='_blank' className='ml-4 sm:ml-1 rounded-lg bg-dark text-light p-2 px-6 sm:px-2 text-lg sm:text-xs font-semibold dark:bg-greenLight dark:text-dark '>
                             Visit Project
                         </Link>
                     </div>
-                    <div className='flex gap-2 '>
+                    <div className='flex flex-wrap gap-2 items-end justify-end'>
                         {
                             tools.map((tool) => {
                                 return (
-                                    <Image src={tool} alt={title} className='w-8 h-8'
+                                    <Image src={tool} alt={title} className='w-8 h-8 sm:w-4 sm:h-4'
 
                                     />
                                 )
@@ -108,7 +108,7 @@ const Project = ({ type, title, img, link, github, tools }) => {
                     <h2 className='my-2 w-full text-left text-3xl font-bold lg:text-2xl'>{title}</h2>
                 </Link>
 
-                <div className='w-full mt-2 flex items-center justify-between'>
+                <div className='w-full mt-2 flex items-center justify-between gap-0 sm:gap-4'>
                     <div className='flex gap-4 justify-center items-center'>
                         <Link href={link} target='_blank' className='text-lg font-semibold underline md:text-base'>
                             Visit
@@ -121,7 +121,7 @@ const Project = ({ type, title, img, link, github, tools }) => {
                         {
                             tools.map((tool) => {
                                 return (
-                                    <Image src={tool} alt={title} className='w-6 h-6'
+                                    <Image src={tool} alt={title} className='w-6 h-6 sm:w-4 sm:h-4'
 
                                     />
                                 )
@@ -146,7 +146,7 @@ function projects() {
             <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
                 <Layout className='pt-16'>
                     <AnimatedText text='Freedom is in the Imagination!' className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl' />
-                    <div className='grid grid-cols-12 gap-24 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-4'>
+                    <div className='grid grid-cols-12 gap-24 sm:gap-y-10 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-4'>
                         <div className='col-span-12'>
                             <FeaturedProject
 
