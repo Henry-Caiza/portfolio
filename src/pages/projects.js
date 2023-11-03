@@ -20,14 +20,29 @@ import linktreeapp from '../../public/images/projects/linktree.png'
 
 import stadisticapp from '../../public/images/projects/stadisticbasic.png'
 import stupifyapp from '../../public/images/projects/stupify.png'
+import pokedexapp from '../../public/images/projects/pokedex.png'
 
+import tailwindImg from '../../public/images/tools/tailwind-css.svg'
+import jsImg from '../../public/images/tools/javascript-js.svg'
+import nextImg from '../../public/images/tools/nextjs.png'
+import reactImg from '../../public/images/tools/react.svg'
+import postgresqlImg from '../../public/images/tools/postgresql.svg'
+import supabaseImg from '../../public/images/tools/supabase.svg'
+import strapiImg from '../../public/images/tools/strapi.svg'
+import viteImg from '../../public/images/tools/vite.png'
+import apiImg from '../../public/images/tools/rest-api.png'
+import cssImg from '../../public/images/tools/file-css.svg'
+import framerImg from '../../public/images/tools/framer.png'
+import reduxImg from '../../public/images/tools/redux-original.svg'
+import firebaseImg from '../../public/images/tools/file-type-firebase.svg'
 
 import { motion } from 'framer-motion'
 import { TransitionEffect } from '@/components/TransitionEffect'
 
 const FramerImage = motion(Image)
 
-const FeaturedProject = ({ type, title, summary, img, link, github }) => {
+const FeaturedProject = ({ type, title, summary, img, link, github, tools }) => {
+
     return (
 
         <article className='w-full flex items-center justify-between rounded-br-xl relative rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-greenLight lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'>
@@ -48,13 +63,26 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
                     <h2 className='my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm'>{title}</h2>
                 </Link>
                 <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
-                <div className='mt-2 flex items-center'>
-                    <Link href={github} target='_blank' className='w-10'>
-                        <GithubIcon />
-                    </Link>
-                    <Link href={link} target='_blank' className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-greenLight dark:text-dark sm:px-4 sm:text-base'>
-                        Visit Project
-                    </Link>
+                <div className='mt-2 w-full flex justify-between'>
+                    <div className='flex'>
+                        <Link href={github} target='_blank' className='w-10'>
+                            <GithubIcon />
+                        </Link>
+                        <Link href={link} target='_blank' className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-greenLight dark:text-dark sm:px-4 sm:text-base'>
+                            Visit Project
+                        </Link>
+                    </div>
+                    <div className='flex gap-2 '>
+                        {
+                            tools.map((tool) => {
+                                return (
+                                    <Image src={tool} alt={title} className='w-8 h-8'
+
+                                    />
+                                )
+                            })
+                        }
+                    </div>
                 </div>
             </div>
 
@@ -63,7 +91,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
     )
 }
 
-const Project = ({ type, title, img, link, github }) => {
+const Project = ({ type, title, img, link, github, tools }) => {
     return (
         <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-greenLight xs:p-4'>
 
@@ -81,12 +109,25 @@ const Project = ({ type, title, img, link, github }) => {
                 </Link>
 
                 <div className='w-full mt-2 flex items-center justify-between'>
-                    <Link href={link} target='_blank' className='text-lg font-semibold underline md:text-base'>
-                        Visit
-                    </Link>
-                    <Link href={github} target='_blank' className='w-8 md:w-6'>
-                        <GithubIcon />
-                    </Link>
+                    <div className='flex gap-4 justify-center items-center'>
+                        <Link href={link} target='_blank' className='text-lg font-semibold underline md:text-base'>
+                            Visit
+                        </Link>
+                        <Link href={github} target='_blank' className='w-8 md:w-6'>
+                            <GithubIcon />
+                        </Link>
+                    </div>
+                    <div className='flex gap-2 '>
+                        {
+                            tools.map((tool) => {
+                                return (
+                                    <Image src={tool} alt={title} className='w-6 h-6'
+
+                                    />
+                                )
+                            })
+                        }
+                    </div>
 
                 </div>
             </div>
@@ -116,6 +157,7 @@ function projects() {
                                 link='https://spotify-clone-henrycv.vercel.app/'
                                 github='https://github.com/Henry-Caiza/spotify-clone'
                                 type='Web Site'
+                                tools={[nextImg, reactImg, tailwindImg, postgresqlImg, supabaseImg, strapiImg, jsImg]}
                             />
                         </div>
                         <div className='col-span-12'>
@@ -128,8 +170,64 @@ function projects() {
                                 link='https://shopy-hc.netlify.app/'
                                 github='https://github.com/Henry-Caiza/shopify'
                                 type='Web Site'
+                                tools={[reactImg, tailwindImg, apiImg, viteImg, jsImg]}
                             />
                         </div>
+                        <div className='col-span-6 sm:col-span-12'>
+                            <Project
+                                title='MovSos - Movies and Series TV'
+                                img={movsosapp}
+                                link='https://henry-caiza.github.io/movsos/'
+                                github='https://github.com/Henry-Caiza/movsos'
+                                type='Web Site'
+                                tools={[jsImg, cssImg, apiImg]}
+                            />
+                        </div>
+                        <div className='col-span-6 sm:col-span-12'>
+                            <Project
+                                title='Weather App'
+                                img={weatherapp}
+                                link='https://henry-caiza.github.io/avostore/public/wather.html'
+                                github='https://github.com/Henry-Caiza/avostore'
+                                type='Web Site'
+                                tools={[jsImg, cssImg, apiImg]}
+                            />
+                        </div>
+                        <div className='col-span-12'>
+                            <FeaturedProject
+
+                                title='Pokedex'
+                                img={pokedexapp}
+                                summary=
+                                'An app that shows all pokemons that uses API REST, React, Tailwind CSS, Redux Toolkit and Firebase. It shows information about the pokemons where it can help you search for a specific pokemon, compare pokemons, show all details of a pokemon and and create your favorite pokemon collection with an login.'
+                                link='https://pokedex-hcv.netlify.app/'
+                                github='https://github.com/Henry-Caiza/pokedex'
+                                type='Web Site'
+                                tools={[apiImg, reactImg, tailwindImg, reduxImg, firebaseImg, jsImg]}
+                            />
+                        </div>
+
+                        <div className='col-span-6 sm:col-span-12'>
+                            <Project
+                                title='Game with JS'
+                                img={gameapp}
+                                link='https://henry-caiza.github.io/juegoJS/'
+                                github='https://github.com/Henry-Caiza/juegoJS'
+                                type='Web App'
+                                tools={[jsImg, cssImg]}
+                            />
+                        </div>
+                        <div className='col-span-6 sm:col-span-12'>
+                            <Project
+                                title='Pelosos Random'
+                                img={catapirest}
+                                link='https://henry-caiza.github.io/CatApi/public/index.html'
+                                github='https://github.com/Henry-Caiza/CatApi'
+                                type='Web Site'
+                                tools={[jsImg, cssImg, apiImg]}
+                            />
+                        </div>
+
                         <div className='col-span-12'>
                             <FeaturedProject
 
@@ -140,36 +238,7 @@ function projects() {
                                 link='https://henry-caiza-gym.netlify.app/'
                                 github='https://github.com/Henry-Caiza/gym'
                                 type='Web Site'
-                            />
-                        </div>
-                        <div className='col-span-6 sm:col-span-12'>
-                            <Project
-                                title='MovSos - Movies and Series TV'
-                                img={movsosapp}
-                                link='https://henry-caiza.github.io/movsos/'
-                                github='https://github.com/Henry-Caiza/movsos'
-                                type='Web Site'
-                            />
-                        </div>
-                        <div className='col-span-6 sm:col-span-12'>
-                            <Project
-                                title='Pelosos Random'
-                                img={catapirest}
-                                link='https://henry-caiza.github.io/CatApi/public/index.html'
-                                github='https://github.com/Henry-Caiza/CatApi'
-                                type='Web Site'
-                            />
-                        </div>
-                        <div className='col-span-12'>
-                            <FeaturedProject
-
-                                title='Pokedux'
-                                img={pokeredux}
-                                summary=
-                                'An app that shows the pokemons of the first generation that uses API REST, React, Tailwind CSS and Redux. It shows information about the first generation pokemon where it can help you search for a specific pokemon.'
-                                link='https://pokeredux-hc.netlify.app/'
-                                github='https://github.com/Henry-Caiza/pokeRedux'
-                                type='Web Site'
+                                tools={[nextImg, reactImg, tailwindImg, framerImg, jsImg]}
                             />
                         </div>
                         <div className='col-span-6 sm:col-span-12'>
@@ -179,15 +248,17 @@ function projects() {
                                 link='https://henry-caiza.github.io/travel/public/index.html'
                                 github='https://github.com/Henry-Caiza/travel'
                                 type='Featured Project'
+                                tools={[jsImg, tailwindImg]}
                             />
                         </div>
                         <div className='col-span-6 sm:col-span-12'>
                             <Project
-                                title='Weather App'
-                                img={weatherapp}
-                                link='https://henry-caiza.github.io/avostore/public/wather.html'
-                                github='https://github.com/Henry-Caiza/avostore'
+                                title='Pokedux'
+                                img={pokeredux}
+                                link='https://pokeredux-hc.netlify.app/'
+                                github='https://github.com/Henry-Caiza/pokeRedux'
                                 type='Web Site'
+                                tools={[jsImg, apiImg, reactImg, tailwindImg, reduxImg, viteImg]}
                             />
                         </div>
                         <div className='col-span-12'>
@@ -200,8 +271,10 @@ function projects() {
                                 link='https://henry-caiza.github.io/todo/'
                                 github='https://github.com/Henry-Caiza/todo'
                                 type='Web App'
+                                tools={[jsImg, cssImg, reactImg]}
                             />
                         </div>
+
                         <div className='col-span-6 sm:col-span-12'>
                             <Project
                                 title='Landing Music'
@@ -209,17 +282,10 @@ function projects() {
                                 link='https://henry-caiza.github.io/landingAsy/'
                                 github='https://github.com/Henry-Caiza/landingAsy'
                                 type='Web Site'
+                                tools={[jsImg, cssImg, apiImg]}
                             />
                         </div>
-                        <div className='col-span-6 sm:col-span-12'>
-                            <Project
-                                title='Game with JS'
-                                img={gameapp}
-                                link='https://henry-caiza.github.io/juegoJS/'
-                                github='https://github.com/Henry-Caiza/juegoJS'
-                                type='Web App'
-                            />
-                        </div>
+
                         <div className='col-span-6 sm:col-span-12'>
                             <Project
                                 title='LinkTree clone'
@@ -227,6 +293,7 @@ function projects() {
                                 link='https://henry-caiza.github.io/links/index.html'
                                 github='https://github.com/Henry-Caiza/links/tree/gh-pages'
                                 type='Web Site'
+                                tools={[jsImg, cssImg]}
                             />
                         </div>
                         <div className='col-span-6 sm:col-span-12'>
@@ -236,6 +303,7 @@ function projects() {
                                 link='https://henry-caiza.github.io/estadisticaBasicaJs/'
                                 github='https://github.com/Henry-Caiza/estadisticaBasicaJs'
                                 type='Web App'
+                                tools={[jsImg, apiImg]}
                             />
                         </div>
                     </div>
