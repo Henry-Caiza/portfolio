@@ -35,6 +35,7 @@ import cssImg from '../../public/images/tools/file-css.svg'
 import framerImg from '../../public/images/tools/framer.png'
 import reduxImg from '../../public/images/tools/redux-original.svg'
 import firebaseImg from '../../public/images/tools/file-type-firebase.svg'
+import tsImg from '../../public/images/tools/typescript-icon.svg'
 
 import { motion } from 'framer-motion'
 import { TransitionEffect } from '@/components/TransitionEffect'
@@ -157,7 +158,7 @@ function projects() {
                                 link='https://spotify-clone-henrycv.vercel.app/'
                                 github='https://github.com/Henry-Caiza/spotify-clone'
                                 type='Web Site'
-                                tools={[nextImg, reactImg, tailwindImg, postgresqlImg, supabaseImg, strapiImg, jsImg]}
+                                tools={[nextImg, reactImg, tailwindImg, postgresqlImg, supabaseImg, strapiImg, tsImg]}
                             />
                         </div>
                         <div className='col-span-12'>
@@ -203,7 +204,7 @@ function projects() {
                                 link='https://pokedex-hcv.netlify.app/'
                                 github='https://github.com/Henry-Caiza/pokedex'
                                 type='Web Site'
-                                tools={[apiImg, reactImg, tailwindImg, reduxImg, firebaseImg, jsImg]}
+                                tools={[apiImg, reactImg, tailwindImg, reduxImg, firebaseImg, tsImg]}
                             />
                         </div>
 

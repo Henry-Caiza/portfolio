@@ -27,18 +27,21 @@ function Skills() {
                 >
                     WEB
                 </motion.div>
-                <Skill name='CSS' x='-5vw' y='-10vw' />
-                <Skill name='HTML' x='-20vw' y='2vw' />
-                <Skill name='JavaScript' x='24vw' y='6vw' />
-                <Skill name='ReactJS' x='0vw' y='12vw' />
-                <Skill name='NextJS' x='-20vw' y='-15vw' />
+                <Skill name='CSS' x='0vw' y='-7vw' />
+                <Skill name='HTML' x='12vw' y='2vw' />
+                <Skill name='JavaScript' x='24vw' y='4vw' />
+                <Skill name='ReactJS' x='4vw' y='10vw' />
+                <Skill name='NextJS' x='-15vw' y='-12vw' />
+                <Skill name='TypeScript' x='0vw' y='-18vw' />
                 <Skill name='Figma' x='15vw' y='-12vw' />
                 <Skill name='Java' x='32vw' y='-5vw' />
-                <Skill name='C#' x='0vw' y='-22vw' />
-                <Skill name='MySQL' x='-5vw' y='22vw' />
-                <Skill name='PostgreSQL' x='25vw' y='18vw' />
+                <Skill name='C#' x='-22vw' y='-18vw' />
+                <Skill name='MySQL' x='-4vw' y='21vw' />
+                <Skill name='PostgreSQL' x='25vw' y='16vw' />
                 <Skill name='Tailwind CSS' x='-32vw' y='-5vw' />
-                <Skill name='NodeJS' x='-30vw' y='15vw' />
+                <Skill name='NodeJS' x='-25vw' y='12vw' />
+                <Skill name='MongoDB' x='21vw' y='-18vw' />
+                <Skill name='Docker' x='-20vw' y='2vw' />
             </div>
         </>
     )
