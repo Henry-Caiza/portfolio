@@ -21,6 +21,7 @@ import linktreeapp from '../../public/images/projects/linktree.png'
 import stadisticapp from '../../public/images/projects/stadisticbasic.png'
 import stupifyapp from '../../public/images/projects/stupify.png'
 import pokedexapp from '../../public/images/projects/pokedex.png'
+import eatsapp from '../../public/images/projects/eats.png'
 
 import tailwindImg from '../../public/images/tools/tailwind-css.svg'
 import jsImg from '../../public/images/tools/javascript-js.svg'
@@ -186,12 +187,12 @@ function projects() {
                         </div>
                         <div className='col-span-6 sm:col-span-12'>
                             <Project
-                                title='Weather App'
-                                img={weatherapp}
-                                link='https://henry-caiza.github.io/avostore/public/wather.html'
-                                github='https://github.com/Henry-Caiza/avostore'
+                                title='Eats Elite'
+                                img={eatsapp}
+                                link='https://eats-elite.vercel.app'
+                                github='https://github.com/Henry-Caiza/eats-elite'
                                 type='Web Site'
-                                tools={[jsImg, cssImg, apiImg]}
+                                tools={[jsImg, nextImg, reactImg, tailwindImg]}
                             />
                         </div>
                         <div className='col-span-12'>
@@ -275,7 +276,16 @@ function projects() {
                                 tools={[jsImg, cssImg, reactImg]}
                             />
                         </div>
-
+                        <div className='col-span-6 sm:col-span-12'>
+                            <Project
+                                title='Weather App'
+                                img={weatherapp}
+                                link='https://henry-caiza.github.io/avostore/public/wather.html'
+                                github='https://github.com/Henry-Caiza/avostore'
+                                type='Web Site'
+                                tools={[jsImg, cssImg, apiImg]}
+                            />
+                        </div>
                         <div className='col-span-6 sm:col-span-12'>
                             <Project
                                 title='Landing Music'

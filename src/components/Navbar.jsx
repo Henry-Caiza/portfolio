@@ -74,7 +74,7 @@ function Navbar() {
                 </nav>
                 <nav className="flex items-center justify-center flex-wrap ">
                     <motion.a href='https://twitter.com/HenryCV12' target={'_blanck'}
-                        className="w-6 mr-3"
+                        className="w-6 mr-4"
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                     >
@@ -134,7 +134,7 @@ function Navbar() {
                         </nav>
                         <nav className="flex items-center justify-center flex-wrap mt-2">
                             <motion.a href='https://twitter.com/HenryCV12' target={'_blanck'}
-                                className="w-6 mr-3 sm:mx-1"
+                                className="w-6 mr-4 sm:mx-2.5"
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
                             >
